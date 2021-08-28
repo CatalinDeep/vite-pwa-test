@@ -7,7 +7,12 @@ export default defineConfig({
   plugins: [
     reactRefresh(),
     VitePWA({
-      includeAssets: [],
+      includeAssets: [
+        "favicon.svg",
+        "favicon.ico",
+        "robots.txt",
+        "apple-touch-icon.png",
+      ],
       manifest: {
         name: "Vite PWA Test",
         short_name: "VPT",
